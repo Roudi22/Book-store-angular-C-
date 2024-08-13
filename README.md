@@ -27,17 +27,16 @@ Before you can run this application locally, ensure you have the following insta
 Navigate to the BookStoreApi directory:
 
 ```bash
-Kopiera kod
 cd BookStoreApi
-Restore the .NET dependencies:
 ```
-bash
-Kopiera kod
+Restore the .NET dependencies:
+
+```bash
 dotnet restore
+```
 Update the appsettings.json for local development:
 
-json
-Kopiera kod
+```bash
 {
   "Jwt": {
     "Key": "your-secure-key",
@@ -46,35 +45,31 @@ Kopiera kod
   },
   "AllowedHosts": "*"
 }
-Run the migrations (if you switch to a database instead of in-memory storage):
-
-bash
-Kopiera kod
-dotnet ef database update
+```
 Build and run the backend server:
 
-bash
-Kopiera kod
+```bash
 dotnet build
 dotnet run
+```
 The backend server should now be running at https://localhost:5001 or http://localhost:5000.
 
 3. Frontend Setup (Angular)
 Navigate to the BookStoreClient directory:
 
-bash
-Kopiera kod
+```bash
 cd ../BookStoreClient
+```
 Install the Angular dependencies:
 
-bash
-Kopiera kod
+```bash
 npm install
+```
 Start the Angular development server:
 
-bash
-Kopiera kod
+```bash
 ng serve
+```
 The frontend should now be running at http://localhost:4200.
 
 4. Running the Application
