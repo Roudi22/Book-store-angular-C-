@@ -26,11 +26,11 @@ Before you can run this application locally, ensure you have the following insta
 2. Backend Setup (.NET Core)
 Navigate to the BookStoreApi directory:
 
-bash
+```bash
 Kopiera kod
 cd BookStoreApi
 Restore the .NET dependencies:
-
+```
 bash
 Kopiera kod
 dotnet restore
